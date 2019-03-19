@@ -1,0 +1,69 @@
+/* Required for full background image */
+
+html,
+body,
+header,
+.jarallax {
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #ff9999 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #ffc8c8 !important;
+  }
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+#btn-mi{
+ background-color: #ff9999;
+}
+#btn-cv{
+ background-color: #444f5a;
+}
+#apellido{
+    color: #ffc8c8;
+}
+
+.color-one {
+ color: #ff9999;
+}
+.color-two{
+    color: #ffc8c8;
+}
+.color-three{
+    color:#88304e;
+}
+.color-four{
+    color: #444f5a;
+}
+.Nunito {
+    font-family: 'Nunito', sans-serif;
+}
+.Yellowtail{
+    font-family: 'Yellowtail', cursive;
+}
+li:hover{
+    background-color: #ff9999;
+    border-radius: 10px;
+}
