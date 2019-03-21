@@ -35,47 +35,53 @@ header,
 h5 {
   letter-spacing: 3px;
 }
-#btn-mi{
+#btn-mi {
  background-color: #ffc8c8;
 }
-#btn-cv{
+#btn-cv {
  background-color: #444f5a;
 }
-#apellido{
+#apellido {
     color: #ffc8c8;
 }
 
 .color-one {
  color: #ff9999;
 }
-.color-two{
+.color-two {
     color: #ffc8c8;
 }
-.color-three{
-    color:#88304e;
-}
-.color-four{
+.color-four {
     color: #444f5a;
 }
 .Nunito {
     font-family: 'Nunito', sans-serif;
 }
-.Yellowtail{
+.Yellowtail {
     font-family: 'Yellowtail', cursive;
 }
-li:hover{
+li:hover {
     background-color: #ff9999;
     border-radius: 10px;
 }
-.text-habilidades{
+.text-habilidades {
   font-size: 35px;
   padding: 10px;
   text-decoration: none;
   list-style: none;
 }
 
-.img-habilidades{
+.img-habilidades {
   width: 100px;
   height: 100px;  
   margin: 45px;
+}
+.gif-hab {
+  width: 100px;
+  height: 100px;
+}
+.img-footer{
+  width: 70px;
+  height: 70px;  
+  margin: 40px;
 }

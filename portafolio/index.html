@@ -24,7 +24,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#inicio">
         <img src="img/Logo-gris.png" height="30" alt="mdb logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
@@ -34,21 +34,21 @@
       <div class="collapse navbar-collapse Nunito" id="navbarSupportedContent-7">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">INICIO
+            <a class="nav-link" href="#inicio">INICIO
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ACERCA DE MÍ</a>
+            <a class="nav-link" href="#mi">ACERCA DE MÍ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">HABILIDADES</a>
+            <a class="nav-link" href="#habilidades">HABILIDADES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PROYECTOS</a>
+            <a class="nav-link" href="#proyectos">PROYECTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTO</a>
+            <a class="nav-link" href="#contacto">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
   </nav>
   <!-- Navbar -->
   <!-- Full Page Intro -->
-  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1500160503851-c04cefe545a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div id="inicio" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1500160503851-c04cefe545a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Mask & flexbox options-->
     <div class="mask rgba-white-light d-flex justify-content-center align-items-center">
       <!-- Content -->
@@ -65,12 +65,12 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-md-12 white-text text-center">
-            <h1 class="display-3 mb-0 pt-md-5 pt-5 color-one font-weight-bold Nunito" data-wow-delay="0.3s">JOAN LAZO</h1>
+            <h1 class="display-3 mb-0 pt-md-5 pt-5 color-one font-weight-bold Nunito animated bounce" data-wow-delay="0.5s">JOAN LAZO</h1>
             <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 color-four font-weight-bold Nunito"
               data-wow-delay="0.3s">Front-end Developer</h5>
             <div class="wow fadeInDown" data-wow-delay="0.3s">
-              <a class="btn btn-lg" id="btn-cv">Mira mi C.V.</a>
-              <a class="btn btn-lg" id="btn-mi">Acerca de mi</a>
+              <a class="btn btn-lg" id="btn-cv" href="">Mira mi C.V.</a>
+              <a class="btn btn-lg" id="btn-mi" href="#mi">Acerca de mi</a>
             </div>
           </div>
           <!--Grid column-->
@@ -88,13 +88,13 @@
 
 
 <main>
-  <div class="container py-5 pb-5 mb-5">
+  <div class="container py-5 pb-5 mb-5" id="mi">
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
       <div class="col-md-12 text-justify">
           <h1 class="font-weight-bold Nunito color-four py-5">ACERCA DE MÍ</h1>
-          <div class="d-flex flex-row">
+          <div class="d-flex flex-xl-row flex-sm-column" >
         <div class="col-md-4">
           <img class="py-5" src="img/foto-joan (1).png" alt="Joan">
         </div>
@@ -111,7 +111,7 @@
   </div>
 
 
-  <div class="container-fluid lady-lips-gradient py-5">
+  <div class="container-fluid frozen-dreams-gradient py-5" id="habilidades">
     <!--Grid row-->
     <div class="row py-5">
       <!--Grid column-->
@@ -147,21 +147,21 @@
           <h1 class="font-weight-bold Nunito color-four py-5">HABILIDADES BLANDAS</h1>
             
               <ul class="d-flex flex-column justify-content-center align-items-center text-justify">
-                    <li class="Nunito color-four text-habilidades">Autoaprendizaje</li>
-                    <li class="Nunito color-four text-habilidades">Pasión</li>
-                    <li class="Nunito color-four text-habilidades">Perseverancia</li>
-                    <li class="Nunito color-four text-habilidades">Adaptabilidad</li>
-                    <li class="Nunito color-four text-habilidades">Organización</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso"> Autoaprendizaje</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Pasión por lo que hago</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Perseverancia</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Adaptabilidad</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab"src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Trabajo en equipo</li>
               </ul>
          
       </div>
-    </div>
+    </div>  
   </div>
   </div>
   
 
 
-<div class="container my-5">
+<div class="container my-5" id="proyectos">
     <!--Grid row-->
     <div class="row py-5">
       <!--Grid column-->
@@ -180,11 +180,73 @@
     </div>
     <!--Grid row-->
   </div>
+
 </main>
 <!--Main Layout-->
-<footer>
-  <p></p>
+<!-- Footer -->
+<footer class="page-footer font-small grey darken-2" id="contacto">
+    <div style="background-color: #ff9999;">
+        <div class="container">
+  
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+  
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0 Nunito color-white">CONTACTAME POR MIS REDES SOCIALES</h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            </div>
+            <!-- Grid column -->
+  
+          </div>
+          <!-- Grid row-->
+  
+        </div>
+      </div>
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+      
+      <!-- Grid column -->
+      <div class="col-md-12 py-2">
+        <div class="mb-5 flex-center">
+          <!-- Twitter -->
+          <a class="tw-ic" href="https://www.linkedin.com/in/joan-lazo-morales/">
+            <img class="img-footer" src="img/linkedin-blanco-blanco.png" alt="linkedin">
+          </a> 
+          <!--Linkedin -->
+          <a class="li-ic" href="https://twitter.com/LazoJoan">
+            <img class="img-footer" src="img/twitter-blanco.png" alt="twitter">
+          </a>
+          <!-- GitHub -->
+          <a class="li-ic" href="https://github.com/JoanLazo">
+            <img class="img-footer" src="img/github-logo-3.png" alt="github">
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>  
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3  grey darken-3">Joan Lazo Copyright © 2019 
+    <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
+  </div>
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
 
 
 <!-- SCRIPTS -->
