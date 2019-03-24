@@ -14,7 +14,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/joangris.ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="#inicio">
-        <img src="img/Logo-gris.png" height="30" alt="mdb logo">
+        <img src="img/logo-cuadrado.png" height="30" alt="mdb logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,17 +33,19 @@
       </button>
       <div class="collapse navbar-collapse Nunito" id="navbarSupportedContent-7">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#inicio">INICIO
-              <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#mi">ACERCA DE MÍ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#habilidades">HABILIDADES</a>
+            <a class="nav-link" href="#habilidades-tec">HABILIDADES TÉCNICAS</a>
           </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#habilidades-bla">HABILIDADES BLANDAS</a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="#proyectos">PROYECTOS</a>
           </li>
@@ -56,21 +58,21 @@
   </nav>
   <!-- Navbar -->
   <!-- Full Page Intro -->
-  <div id="inicio" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1500160503851-c04cefe545a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div id="inicio" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1552582305-6b778426ab60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <!-- Mask & flexbox options-->
-    <div class="mask rgba-white-light d-flex justify-content-center align-items-center">
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
       <!-- Content -->
       <div class="container">
         <!--Grid row-->
         <div class="row">
           <!--Grid column-->
           <div class="col-md-12 white-text text-center">
-            <h1 class="display-3 mb-0 pt-md-5 pt-5 color-one font-weight-bold Nunito animated bounce" data-wow-delay="0.5s">JOAN LAZO</h1>
-            <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 color-four font-weight-bold Nunito"
-              data-wow-delay="0.3s">Front-end Developer</h5>
+            <h1 class="display-3 mb-0 pt-md-5 pt-5 color-five font-weight-bold Nunito animated bounce slow" data-wow-delay="0.5s">JOAN LAZO</h1>
+            <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 font-weight-bold Nunito"
+              data-wow-delay="0.8s">Front-end Developer</h5>
             <div class="wow fadeInDown" data-wow-delay="0.3s">
-              <a class="btn btn-lg" id="btn-cv" href="">Mira mi C.V.</a>
-              <a class="btn btn-lg" id="btn-mi" href="#mi">Acerca de mi</a>
+              <a class="btn btn-lg btn-mi" href="">Mira mi C.V.</a>
+              <a class="btn btn-lg btn-cv" href="#mi">Acerca de mi</a>
             </div>
           </div>
           <!--Grid column-->
@@ -88,36 +90,102 @@
 
 
 <main>
-  <div class="container py-5 pb-5 mb-5" id="mi">
+ 
+ <!--Section: Features v.4-->
+<section id="mi">
+
+    <!--Section heading-->
+    <h1 class="h1 py-5 font-weight-bold text-center Nunito color-four">ACERCA DE MÍ</h1>
+    <!--Section description-->
+    <p class="px-5 mb-5 pb-3 lead grey-text text-center Nunito text-justify">Amante del autoaprendiza, el diseño y la tecnología, mi gusto por aprender nuevas cosas me llevo a convertirme en Front-end developer en Laboratoria donde aprendí a desarrollar proyectos tecnológicos reales con JavaScript, HTML y CSS; gracias a ello descubrí un mundo donde puedes crear todo lo que te imagines. Me considero una persona apasionada y dispuesta a enfrentar nuevos retos.</p>
+     <div class="container">
     <!--Grid row-->
     <div class="row">
+  
       <!--Grid column-->
-      <div class="col-md-12 text-justify">
-          <h1 class="font-weight-bold Nunito color-four py-5">ACERCA DE MÍ</h1>
-          <div class="d-flex flex-xl-row flex-sm-column" >
-        <div class="col-md-4">
-          <img class="py-5" src="img/foto-joan (1).png" alt="Joan">
+      <div class="col-md-4">
+  
+        <!--Grid row-->
+        <div class="row mb-2">
+          <div class="col-2">
+              <i class="fas fa-2x fa-address-book color-gren"></i>
+          </div>
+          <div class="col-10 text-left">
+            <h5 class="font-weight-bold">Mi background</h5>
+            <p class="grey-text Nunito text-justify">Parte de mi background es ser Bachiller en Ciencias de la educación con especialidad en educación e-learning, estos estudios me apasionaron a unir la educación con la tecnología y seguir mi rumbo hacia el desarrollo web.</p>
+          </div>
         </div>
-        <div class="col-md-8 text-justify mt-5 pt-5">
-          <p>Amante del autoaprendiza, el diseño y la tecnología, mi gusto por aprender nuevas cosas me llevo a convertirme en Front-end developer en Laboratoria donde aprendí a desarrollar proyectos tecnológicos reales en base a metologías ágiles, gracias a ello descubri un mundo donde puedes crear todo lo que te imagines. 
-          <p>Parte de mi background es ser Bachiller en Ciencias de la educación con especialidad en educación e-learning, estos estudios me apasionaron a unir la educación con la tecnología y seguir mi rumbo hacia el desarrollo web.</p></p>
-        <P>Me considero una persona apasionada y dispuesta a enfrentar nuevos retos.</P>
-    </div>
-  </div>
-</div>
-      <!--Grid column-->  
+        <!--Grid row-->
+  
+        <!--Grid row-->
+  
+        <!--Grid row-->
+        <div class="row mb-2">
+          <div class="col-2">
+              <i class="fas fa-2x fa-paint-brush color-purple"></i>
+          </div>
+          <div class="col-10 text-left">
+            <h5 class="font-weight-bold">Pasatiempos</h5>
+            <p class="grey-text Nunito text-justify">Me divierten los juegos multijugador de estrategia, crear prendas o accesorios en tela y ver peliculas.</p>
+          </div>
+        </div>
+        <!--Grid row-->
+  
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-md-4 mb-5 center-on-small-only flex-center">
+        <img src="img/foto-joan-negro.png" alt="joan" class="z-depth-0 img-joan">
+      </div>
+      <!--Grid column-->
+  
+      <!--Grid column-->
+      <div class="col-md-4">
+  
+        <!--Grid row-->
+        <div class="row mb-2">
+          <div class="col-2">
+            <i class="fas fa-2x fa-heart color-yellow"></i>
+          </div>
+          <div class="col-10 text-left">
+            <h5 class="font-weight-bold">Metológias</h5>
+            <p class="grey-text Nunito text-justify">En Laboratoria aprendí ah trabajar proyectos reales bajo metodologías agiles, desarrollando la capacidad de aprender a aprender, mucha pasión y trabajo en equipo.
+            </p>
+          </div>
+        </div>
+        <!--Grid row-->
+  
+        <!--Grid row-->
+        <div class="row mb-2">
+          <div class="col-2">
+              <i class="far fa-2x fa-lightbulb color-one"></i>
+          </div>
+          <div class="col-10 text-left">
+            <h5 class="font-weight-bold">Metas</h5>
+            <p class="grey-text Nunito text-justify">Me encanta aprender, una de mis metas a corto plazo es aprender otro frameworks como AngularJS y un lenguaje de programación que me causa mucha curiosidad Phyton</p>
+          </div>
+        </div>
+        <!--Grid row-->
+  
+      </div>
+      <!--Grid column-->
+  
     </div>
     <!--Grid row-->
   </div>
+  </section>
+  <!--/Section: Features v.4--> 
 
+  <div class="container-fluid frozen-dreams-gradient
 
-  <div class="container-fluid frozen-dreams-gradient py-5" id="habilidades">
+  py-5" id="habilidades-tec">
     <!--Grid row-->
     <div class="row py-5">
       <!--Grid column-->
       <div class="col-md-12">
         <div class="container">
-        <h1 class="font-weight-bold Nunito color-four py-5">HABILIDADES TÉCNICAS</h1>
+        <h1 class="font-weight-bold Nunito color-four py-2">HABILIDADES TÉCNICAS</h1>
         
         <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
           <img class="img-habilidades"src="img/javascript.png" alt="js">
@@ -140,18 +208,17 @@
 </div>
 
 <!-- Alternate: Background Image Parallax -->
-<div class="jarallax py-5"  data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1518665750801-883c188a660d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');background-repeat: no-repeat; background-size: cover; background-position: center center;">
+<div  id="habilidades-bla" class="jarallax"  data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');background-repeat: no-repeat; background-size: cover; background-position: center center;">
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12"> 
           <h1 class="font-weight-bold Nunito color-four py-5">HABILIDADES BLANDAS</h1>
             
               <ul class="d-flex flex-column justify-content-center align-items-center text-justify">
-                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso"> Autoaprendizaje</li>
-                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Pasión por lo que hago</li>
-                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Perseverancia</li>
-                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Adaptabilidad</li>
-                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab"src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="proceso">Trabajo en equipo</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="gif-esferas"> Autoaprendizaje</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="gif-esferas">Perseverancia</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab" src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="gif-esferas">Adaptabilidad</li>
+                    <li class="Nunito color-four text-habilidades"><img  class="gif-hab"src="http://www.tepetitlanhidalgo.gob.mx/plantilla/imagenes/recursos/loading.gif" alt="gif-esferas">Trabajo en equipo</li>
               </ul>
          
       </div>
@@ -162,94 +229,145 @@
 
 
 <div class="container my-5" id="proyectos">
-    <!--Grid row-->
+    <h1 class="font-weight-bold Nunito color-four py-5">PROYECTOS</h1>
+    <!--Grid row--> 
     <div class="row py-5">
       <!--Grid column-->
-      <div class="col-md-12 text-justify">
-          <h1 class="Nunito color-four py-5">PROYECTOS</h1>
-          <div class="d-flex flex-row">
+          <div class="d-flex flex-lg-row flex-sm-column flex-md-column flex-xl-row">
         <div class="col-md-4">
-          
-        </div>
-        <div class="col-md-8 text-justify mt-5 pt-5">
-          
-    </div>
+          <!-- Card -->
+<div class="card card-image" style="background-image: url(https://storage.googleapis.com/mmc-cdn-bucket/uploads/2018/09/a5c718d0-leagend.png);background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+      <div>
+          <h5 class="color-one"><i class="fas fa-gamepad"></i></i></i> Data Lovers</h5>
+          <h3 class="card-title pt-2"><strong>Legend of League</strong></h3>
+          <p class="text-justify">League of Legends es un juego en línea competitivo de ritmo frenético, que fusiona la velocidad y la intensidad de la estrategia en tiempo real (ETR) con elementos de juegos de rol.</p>
+          <a class="btn btn-proyecto" href="https://joanlazo.github.io/lim-2018-11-bc-core-am-data-lovers/src/"><i class="far fa-clone left"></i>Ver proyecto</a>
+          <a class="btn btn-proyecto" href="https://github.com/JoanLazo/lim-2018-11-bc-core-am-data-lovers"><i class="far fa-file-code mr-2"></i> Ver código</a>
+      </div>  
   </div>
+  <!-- Content -->
+</div>
+<!-- Card -->
+        </div>
+
+
+        <div class="col-md-4">
+            <!-- Card -->
+  <div class="card card-image" style="background-image: url(http://centroemprendedor.com/wp-content/uploads/2015/01/MAMAS-EN-LAS-REDES-SOCIALES.jpg);background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div>
+            <h5 class="color-one"><i class="fas fa-baby"></i></i> Red Social</h5>
+            <h3 class="card-title pt-2"><strong>Mommy's Love</strong></h3>
+            <p class="text-justify">El proyecto es una red social de apoyo entre madres primerizas donde podrán interactuar publicando sus experiencias, editando y reaccionando con divertidos emoticones.</p>
+            <a class="btn btn-proyecto" href="https://lmyesther.github.io/LIM008-social-network/src/"><i class="far fa-clone left"></i> Ver proyecto</a>
+            <a class="btn btn-proyecto" href="https://github.com/JoanLazo/LIM008-social-network"><i class="far fa-file-code mr-2"></i> Ver código</a>
+        </div>
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Card -->
+          </div>
+  
+
+          <div class="col-md-4">
+              <!-- Card -->
+    <div class="card card-image" style="background-image: url(https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    
+      <!-- Content -->
+      <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          <div>
+              <h5 class="color-one"><i class="fas fa-code"></i> Markdow Links</h5>
+              <h3 class="card-title pt-2"><strong>md-links</strong></h3>
+              <p class="text-justify pb-2"> Markdown es un lenguaje de marcado ligero muy popular entre developers. Se ha creado una herramienta usando Node.js, que lea y analice archivos en formato Markdown, para verificar los links que contengan y reportar algunas estadísticas.</p>
+              <a class="btn btn-proyecto" href="https://github.com/JoanLazo/md-links"><i class="far fa-file-code mr-2"></i> Ver código</a>
+          </div>
+      </div>
+      <!-- Content -->
+    </div>  
+    <!-- Card -->
+            </div>
+         
+
+      
 </div>
       <!--Grid column-->
-    </div>
     <!--Grid row-->
   </div>
+</div>
 
+
+ <!-- Contanct Elements -->
+ <section>
+ <div class="container my-5 py-5" id="contacto">
+    <h1 class="font-weight-bold Nunito color-four py-5">CONTACTO</h1>
+  <!-- Grid row-->
+  <div class="row text-center flex-center">
+    <!-- Grid column -->
+        
+        <div class="col-md-2 my-1">
+            <a>
+                <img class="img-footer" src="img/smartphone-call.png" alt="linkedin">
+              </a>
+              <p class="pl-2 mt-3 Nunito color-four">Celular</p>
+              <p class="mb-md-1 Nunito color-four">997971032</p>
+        </div>
+        <div class="col-md-2 my-1">
+            <a>
+                <img class="img-footer" src="img/gmail-logo.png" alt="gmail">
+              </a>
+              <p class="pl-2 mt-3 Nunito color-four">Gmail</p>
+              <p class="mb-md-0 Nunito color-four">joan162581@gmail.com</p>
+        </div>
+        <div class="col-md-2 my-1">
+            <a href="https://www.linkedin.com/in/joan-lazo-morales/">
+                <img class="img-footer" src="img/linkedin-logo-button (1).png" alt="linkedin">
+              </a>
+              <p class="pl-2 mt-3 Nunito color-four">LinkedIn</p>
+              <p class="mb-md-0 Nunito color-four">/joan-lazo-morales/</p>
+        </div>
+        <div class="col-md-2 my-1">
+            <a  href="https://twitter.com/LazoJoan">
+                <img class="img-footer" src="img/twitter-logo-button (1).png" alt="twitter">
+              </a>
+              <p class="pl-2 mt-3 Nunito color-four">Twitter</p>
+              <p class="mb-md-0 Nunito color-four">@LazoJoan</p>
+        </div>
+        <div class="col-md-2 my-1">
+            <a href="https://github.com/JoanLazo">
+                <img class="img-footer" src="img/github-logo (1).png" alt="github">
+              </a>
+              <p class="pl-2 mt-3 Nunito color-four">GitHub</p>
+              <p class="mb-md-0 Nunito color-four">/JoanLazo</p>
+        </div>
+    
+    <!-- Grid column -->
+
+  </div>  
+  <!-- Grid row-->
+</div>
+</section>
 </main>
 <!--Main Layout-->
 <!-- Footer -->
-<footer class="page-footer font-small grey darken-2" id="contacto">
-    <div style="background-color: #ff9999;">
-        <div class="container">
-  
-          <!-- Grid row-->
-          <div class="row py-4 d-flex align-items-center">
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-              <h6 class="mb-0 Nunito color-white">CONTACTAME POR MIS REDES SOCIALES</h6>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-            </div>
-            <!-- Grid column -->
-  
-          </div>
-          <!-- Grid row-->
-  
-        </div>
-      </div>
-  <!-- Footer Elements -->
-  <div class="container">
 
-    <!-- Grid row-->
-    <div class="row">
-      
-      <!-- Grid column -->
-      <div class="col-md-12 py-2">
-        <div class="mb-5 flex-center">
-          <!-- Twitter -->
-          <a class="tw-ic" href="https://www.linkedin.com/in/joan-lazo-morales/">
-            <img class="img-footer" src="img/linkedin-blanco-blanco.png" alt="linkedin">
-          </a> 
-          <!--Linkedin -->
-          <a class="li-ic" href="https://twitter.com/LazoJoan">
-            <img class="img-footer" src="img/twitter-blanco.png" alt="twitter">
-          </a>
-          <!-- GitHub -->
-          <a class="li-ic" href="https://github.com/JoanLazo">
-            <img class="img-footer" src="img/github-logo-3.png" alt="github">
-          </a>
-        </div>
-      </div>
-      <!-- Grid column -->
 
-    </div>  
-    <!-- Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
+<footer class="page-footer font-small">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3  grey darken-3">Joan Lazo Copyright © 2019 
-    <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
-  </div>
+  <div class="footer-copyright text-center py-3 " style="background-color: #3e4149;">Copyright © 2019 Joan Lazo.</div>
   <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
 
 
-<!-- SCRIPTS -->
+<!-- SCRIPTS -->  
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->

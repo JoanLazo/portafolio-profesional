@@ -19,7 +19,7 @@ header,
 }
 
 .top-nav-collapse {
-  background-color: #ffc8c8 !important;
+  background-color: #3e4149 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
@@ -28,31 +28,49 @@ header,
 
 @media (max-width: 991px) {
   .navbar:not(.top-nav-collapse) {
-    background: #ffc8c8 !important;
+    background: #3e4149 !important;
   }
 }
 
 h5 {
   letter-spacing: 3px;
 }
-#btn-mi {
- background-color: #ffc8c8;
+.btn-mi {
+ background-color: #f38181;
+ border-radius: 10px;
 }
-#btn-cv {
+.btn-cv {
  background-color: #444f5a;
+ border-radius: 10px;
+}
+.btn-proyecto {
+  background-color: #f38181;
+  border-radius: 10px;
 }
 #apellido {
     color: #ffc8c8;
 }
 
 .color-one {
- color: #ff9999;
+ color: #f38181;
 }
 .color-two {
-    color: #ffc8c8;
+    color: #fc5185;
+}
+.color-three {
+  color: #364f6b;
 }
 .color-four {
     color: #444f5a;
+}
+.color-gren{
+  color: #95e1d3
+}
+.color-yellow{
+  color: #fce38a;   
+}
+.color-purple{
+  color: #a2a8d3
 }
 .Nunito {
     font-family: 'Nunito', sans-serif;
@@ -60,13 +78,13 @@ h5 {
 .Yellowtail {
     font-family: 'Yellowtail', cursive;
 }
-li:hover {
+/* li:hover {
     background-color: #ff9999;
     border-radius: 10px;
-}
+} */
 .text-habilidades {
-  font-size: 35px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 5px;
   text-decoration: none;
   list-style: none;
 }
@@ -81,7 +99,22 @@ li:hover {
   height: 100px;
 }
 .img-footer{
-  width: 70px;
-  height: 70px;  
-  margin: 40px;
+  width: 80px;
+  height: 80px;   
+}
+.img-joan {
+  height: 350px;
+}
+@media (max-width: 500px) {
+  .text-habilidades {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .gif-hab {
+    width: 50px;
+    height: 50px;
+  }
+  h1 {
+    font-size: 30px;
+  }
 }
