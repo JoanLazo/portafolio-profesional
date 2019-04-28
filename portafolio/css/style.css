@@ -107,7 +107,7 @@ h5 {
 }
 @media (max-width: 500px) {
   .text-habilidades {
-    font-size: 22px;
+    font-size: 25px;
     padding: 10px;
   }
   .gif-hab {
@@ -116,5 +116,10 @@ h5 {
   }
   h1 {
     font-size: 30px;
+  }
+  #proyectos {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 10px;
   }
 }
