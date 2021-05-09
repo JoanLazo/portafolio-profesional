@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Joan Lazo | Front-end developer</title>
   <!-- Font Awesome -->
@@ -12,6 +12,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- <link href="css/jquery.pagepiling.css" rel="stylesheet" /> -->
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
@@ -20,6 +21,13 @@
 <body>
   <!-- /Start your project here-->
 <!-- Main navigation -->  
+<div class="preloader">
+  <div class="three-bounce">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+</div>
 <header>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
@@ -77,31 +85,54 @@
   </nav>
   <!-- Navbar -->
   <!-- Full Page Intro -->
-  <div id="inicio" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://images.unsplash.com/photo-1552582305-6b778426ab60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-md-12 white-text text-center">
-            <h1 class="display-3 mb-0 pt-md-5 pt-5 color-five font-weight-bold Nunito animated bounce slow" data-wow-duration="0.3s" data-wow-delay="0.5s" data-wow-iteration="0.8s">JOAN LAZO</h1>
-            <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 font-weight-bold Nunito"
-              data-wow-delay="0.8s">Front-end Developer</h5>
-            <div class="wow fadeInDown" data-wow-delay="0.3s">
-              <a class="btn btn-lg btn-mi" href="./img/_Joan Lazo-CV.pdf" target="_blank" download="">Mira mi C.V.</a>
-              <a class="btn btn-lg btn-cv" href="#mi">Acerca de mi</a>
+  <div id="inicio" class="view jarallax" data-jarallax='{"speed": 0.2}'>
+    <div
+            class="section pp-scrollable slide-dark slide-dark-footer slide-personal-intro"
+            style="height: 100%;z-index: 6;
+            transform: translate3d(0px, 0px, 0px);"
+          >
+            <div class="slide-container">
+              <div class="slide-bg">
+                <div
+                  class="slide-photo circle-golden slide-intro-circle1 transformLeft"
+                ></div>
+                <div
+                  class="slide-photo circle-brown slide-intro-circle2 transformRight"
+                ></div>
+                <div class="slide-photo slide-intro-man"></div>
+              </div>
+              <div class="container">
+                <div class="slide-num" style="display: none;">1</div>
+                <div class="row">
+                  <div class="col-sm-6 col-10">
+                    <h1 class="slide-title animate-element delay5 fadeInDown">
+                      Joan Lazo
+                    </h1>
+                    <div class="animate-element delay5 fadeInUp">
+                      <h3 class="slide-title-sub">Front-end developer</h3>
+                      <div class="slide-descr slide-descr-intro">
+                        Hola soy Joan, entre en el mundo de la programación por
+                        curiosidad y ahora desarrollo aplicaciones web amistosas
+                        que generan valor .
+                      </div>
+                      <div class="slide-btn">
+                      <a
+                          class="btn btn-success"
+                          href="./img/joan/_Joan Lazo-CV.pdf"
+                          download
+                        >
+                          Descarga mi cv
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
-    </div>
-    <!-- Mask & flexbox options-->
   </div>
+  </div>
+  
+
   <!-- Full Page Intro -->
 </header>
 <!-- Main navigation -->
@@ -111,12 +142,12 @@
 <main>
  
  <!--Section: Features v.4-->
-<section id="mi" class="container">
+<section id="mi" class="container bg-linea">
 
     <!--Section heading-->
     <h1 class="h1 py-5 font-weight-bold text-center Nunito color-four">ACERCA DE MÍ</h1>
     <!--Section description-->
-    <p class="px-5 mb-5 pb-3 lead grey-text text-center Nunito text-justify">Amante de la tecnología, el diseño y el auto-aprendizaje. Desarrolle proyectos en base a Javascript, React.js , Node.js, Bootstrap, HTML y CSS. Siempre estoy dispuesta a enfrentar nuevos retos tomando los errores como oportunidades para mejorar cada día. Me apasionan los proyectos sociales y educativos; poder crear soluciones que generen valor es mi propósito.</p>
+    <p class="px-5 mb-5 pb-3 lead grey-text text-center Nunito text-justify">Amante de la tecnología, el diseño y el auto-aprendizaje. Desarrolle proyectos en base a Javascript, Angular6+, React.js , Node.js, Bootstrap, HTML y CSS. Siempre estoy dispuesta a enfrentar nuevos retos tomando los errores como oportunidades para mejorar cada día. Me apasionan los proyectos sociales y educativos; poder crear soluciones que generen valor es mi propósito.</p>
      <div class="container">
     <!--Grid row-->
     <div class="row">
@@ -182,7 +213,7 @@
           </div>
           <div class="col-10 text-left">
             <h5 class="font-weight-bold">Metas</h5>
-            <p class="grey-text Nunito text-justify">Me encanta aprender, una de mis metas a corto plazo es aprender otro lenguaje de programación que me causa mucha curiosidad Phyton. Mi meta a largo plazo es crear una comunidad de Maquetadores sordomudos.</p>
+            <p class="grey-text Nunito text-justify">Me encanta aprender, una de mis metas a corto plazo es aprender Flutter, ya que tengo interes en el desarrollo mobile. Mi meta a largo plazo es crear una comunidad de Maquetadores sordomudos.</p>
           </div>
         </div>
         <!--Grid row-->
@@ -199,7 +230,7 @@
   <hr class="my-5">
 
 <!-- Projects section v.3 -->
-<section class="my-5 container" id="experiencias">
+<section class="my-4 container" id="experiencias">
   
   <!-- Section heading -->
   <h2 class="h1-responsive font-weight-bold text-center my-5 Nunito color-four">MIS EXPERIENCIAS</h2>
@@ -210,11 +241,61 @@
  <div class="row">
 
   <!-- Grid column -->
-  <div class="col-lg-5 mb-lg-0 mb-5 mt-lg-5">
+  <div class="col-lg-5 mb-lg-0 mb-5 mt-lg-3">
     <!--Image-->
-    <img src="./img/blockchain.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 400px;">
+    <img src="./img/hack-2020.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 400px;">
   </div>
   <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-7">
+
+    <!-- Grid row -->
+    <div class="row mb-3">
+      <div class="col-md-1 col-2">
+        <i class="fas  fa-2x fa-star color-yellow"></i>
+      </div>
+      <div class="col-md-11 col-10">
+        <h5 class="font-weight-bold mb-3 Nunito">HACKEANDO LA DESIGUALDAD 2020</h5>
+        <p class="grey-text">Hackathon de 24 horas, para desarrollar proyectos que busquen mejorar las oportunidades de las mujeres en sectores de salud, finanzas, educación, tecnología.</p>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row mb-3">
+      <div class="col-md-1 col-2">
+        <i class="far fa-2x fa-lightbulb color-one"></i>
+      </div>
+      <div class="col-md-11 col-10">
+        <h5 class="font-weight-bold mb-3 Nunito">Reto</h5>
+        <p class="grey-text">Desarrolla un MVP en 24 horas, en los sectores donde las mujeres tengas menor oportunidades y derechos.</p>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="row">
+      <div class="col-md-1 col-2">
+        <i class="fas fa-code fa-2x red-text"></i>
+      </div>
+      <div class="col-md-11 col-10">
+        <h5 class="font-weight-bold mb-3">Proyecto</h5>
+        <p class="grey-text mb-0 Nunito">Web-app orientada a la educación financiera para emprendedoras.</p>
+      </div>
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+
+<!-- Grid row -->
+<hr class="my-5">
+
+<!-- Grid row -->
+<div class="row">
 
   <!-- Grid column -->
   <div class="col-lg-7">
@@ -244,7 +325,7 @@
     <!-- Grid row -->
 
     <!-- Grid row -->
-    <div class="row">
+    <div class="row mb-lg-0 mb-5">
       <div class="col-md-1 col-2">
         <i class="fas fa-code fa-2x red-text"></i>
       </div>
@@ -258,60 +339,10 @@
   </div>
   <!-- Grid column -->
 
-</div>
-
-<!-- Grid row -->
-<hr class="my-5">
-
-<!-- Grid row -->
-<div class="row">
-
   <!-- Grid column -->
-  <div class="col-lg-7">
-
-    <!-- Grid row -->
-    <div class="row mb-3">
-      <div class="col-md-1 col-2">
-        <i class="fas  fa-2x fa-star color-yellow"></i>
-      </div>
-      <div class="col-md-11 col-10">
-        <h5 class="font-weight-bold mb-3">Hackatrix Lima 2019</h5>
-        <p class="grey-text Nunito">Hackathon de creación de proyectos innovadoras para solucionar problemas reales de la sociedad.</p>
-      </div>
-    </div>
-    <!-- Grid row -->
-
-    <!-- Grid row -->
-    <div class="row mb-3">
-      <div class="col-md-1 col-2">
-        <i class="far fa-2x fa-lightbulb color-one"></i>
-      </div>
-      <div class="col-md-11 col-10">
-        <h5 class="font-weight-bold mb-3">Reto</h5>
-        <p class="grey-text Nunito">Crear un MVP en 12 horas, sobre el proyecto en cualquier lenguaje.</p>
-      </div>
-    </div>
-    <!-- Grid row -->
-
-    <!-- Grid row -->
-    <div class="row mb-lg-0 mb-5">
-      <div class="col-md-1 col-2">
-        <i class="fas fa-code fa-2x red-text"></i>
-      </div>
-      <div class="col-md-11 col-10">
-        <h5 class="font-weight-bold mb-3">Proyecto</h5>
-        <p class="grey-text mb-0 Nunito">Web-app desarrollanda en html,css y javascript,que permite ubicar centros de donaciones más cercanosa tu zona.</p>
-      </div>
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="col-lg-5">
+  <div class="col-lg-5 mt-lg-5 pt-3 text-center">
     <!--Image-->
-    <img src="./img/belatrix.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 310px;">
+    <img src="./img/blockchain.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 400px;">
   </div>
   <!-- Grid column -->
 
@@ -323,7 +354,7 @@
   <!-- Grid row -->
   <div class="row">
 
-    <div class="col-lg-5">
+    <div class="col-lg-5 mb-4 mb-lg-0">
       <!--Image-->
       <img src="https://user-images.githubusercontent.com/44485081/58052231-e2bdd000-7b19-11e9-9143-0010f434eeb6.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
     </div>
@@ -380,29 +411,32 @@
 <!-- Projects section v.3 -->
 
 <section>
-  <div class="container-fluid frozen-dreams-gradient
-
-  py-5" id="habilidades-tec">
+  <div class="container-fluid
+  py-3 bg-ht" id="habilidades-tec">
     <!--Grid row-->
-    <div class="row py-5">
+    <div class="row py-3">
       <!--Grid column-->
       <div class="col-md-12">
         <div class="container">
-        <h1 class="font-weight-bold Nunito color-four py-5">HABILIDADES TÉCNICAS</h1>
-        
-        <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
-          <img class="img-habilidades"src="img/javascript.png" alt="js">
-          <img class="img-habilidades" src="img/html-5 (1).png" alt="html">
-          <img class="img-habilidades" src="img/css.png" alt="css">
-          <img class="img-habilidades" src="img/bootstrap.png" alt="bootstrap">
-          <img class="img-habilidades" src="img/nodejs.png" alt="nodejs">
-          <img class="img-habilidades" src="img/firebase.png" alt="firebase">
-          <img class="img-habilidades" src="img/react.png" alt="reactjs">
-          <img class="img-habilidades" src="img/github.png" alt="git">
-          <img class="img-habilidades" src="img/github-logo.png" alt="github">
-          <img class="img-habilidades" src="img/babel-1-1175261.png" alt="Babel">
-        
+        <h1 class="font-weight-bold Nunito color-four py-5">HABILIDADES</h1>
+        <div class="row">
+          <div class="col-lg-6 d-block">
+            <div class="d-flex justify-content-center align-items-center flex-wrap mb-3">
+              <img class="img-habilidades d-none d-lg-block" src="img/html-5 (1).png" alt="html">
+              <img class="img-habilidades d-none d-lg-block" src="img/css.png" alt="css">
+              <img class="img-habilidades d-block d-lg-block" src="img/bootstrap.png" alt="bootstrap">
+              <img class="img-habilidades d-none d-lg-block" src="img/nodejs.png" alt="nodejs">
+              <img class="img-habilidades d-none d-lg-block" src="img/firebase.png" alt="firebase">
+              <img class="img-habilidades d-none d-lg-block" src="img/react.png" alt="reactjs">
+              <img class="img-habilidades d-block d-lg-block" src="img/github.png" alt="git">
+              <img class="img-habilidades d-block d-lg-block" src="img/angular.png" alt="github">      
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="./img/pablita-success.png" alt="Equipo">
+          </div>
         </div>
+
       <!--Grid column-->
     </div>
     <!--Grid row-->
@@ -447,7 +481,7 @@
   <div class="col-lg-4 col-md-10 mb-lg-0 mb-4">
     <!--Featured image-->
     <div class="view overlay rounded z-depth-1">
-      <img src="./img/fitlab.png" class="img-fluid img-proy" alt="Sample project image">
+      <img src="./img/fitlab-mock.jpg" class="img-fluid img-proy" alt="Sample project image">
       <a>
         <div class="mask rgba-white-slight"></div>
       </a>
@@ -485,7 +519,7 @@
    <div class="col-lg-4 col-md-6">
     <!--Featured image-->
     <div class="view overlay rounded z-depth-1">
-      <img src="./img/interfondos.jfif" class="img-fluid img-proy" alt="Sample project image">
+      <img src="./img/erni-fondo.png" class="img-fluid img-proy" alt="Sample project image">
       <a>
         <div class="mask rgba-white-slight"></div>
       </a>
@@ -569,7 +603,7 @@
    <div class="col-lg-4 col-md-6">
     <!--Featured image-->
     <div class="view overlay rounded z-depth-1">
-      <img src="https://user-images.githubusercontent.com/44485081/58049706-1ba67680-7b13-11e9-92db-5793806e1e0e.jpg" class="img-fluid img-proy" alt="Sample project image">
+      <img src="./img/burger-mock.png" class="img-fluid img-proy" alt="Sample project image">
       <a>
         <div class="mask rgba-white-slight"></div>
       </a>
@@ -593,54 +627,63 @@
 
 
 
-<hr class="my-5">
+<hr class="my-3">
  <!-- Contanct Elements -->
- <section>
+ <section class="bg-lado">
  <div class="container my-5" id="contacto">
-    <h1 class="font-weight-bold Nunito color-four py-5">CONTACTO</h1>
+    <h1 class="font-weight-bold Nunito color-four py-4">CONTACTO</h1>
+    <p class="grey-text Nunito">Saltemos a la conversación, contáctame por cualquiera de mis redes.
+    </p>
   <!-- Grid row-->
-  <div class="row text-center flex-center">
-    <!-- Grid column -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row text-center flex-center">
+        <!-- Grid column -->
+            
+            <div class="col-4 col-md-2 my-1">
+                <a href="https://api.whatsapp.com/send?phone=+51997971032">
+                    <img class="img-footer" src="img/smartphone-call.png" alt="linkedin">
+                  </a>
+                  <!-- <p class="pl-2 mt-3 Nunito color-four">Celular</p> -->
+                  <!-- <p class="mb-md-1 Nunito color-four"><a href="https://api.whatsapp.com/send?phone=+51997971032" style="text-decoration: none;" class="Nunito color-four">+51 997971032</a></p> -->
+            </div>
+            <div class="col-4 col-md-2 my-1">
+                <a href="mailto:joan162581@gmail.com">
+                    <img class="img-footer" src="img/gmail-logo.png" alt="gmail">
+                </a>
+                  <!-- <p class="pl-2 mt-3 Nunito color-four">Gmail</p> -->
+                  <!-- <p class="mb-md-0 Nunito color-four">joan162581@gmail.com</p> -->
+            </div>
+            <div class="col-4 col-md-2 my-1">
+                <a href="https://www.linkedin.com/in/joan-lazo-morales/" target="_blank">
+                    <img class="img-footer" src="img/linkedin-logo-button (1).png" alt="linkedin">
+                  </a>
+                  <!-- <p class="pl-2 mt-3 Nunito color-four">LinkedIn</p> -->
+                  <!-- <p class="mb-md-0 Nunito color-four">/joan-lazo-morales/</p> -->
+            </div>
+            <div class="col-4 col-md-2 my-1">
+                <a  href="https://twitter.com/LazoJoan" target="_blank">
+                    <img class="img-footer" src="img/twitter-logo-button (1).png" alt="twitter">
+                  </a>
+                  <!-- <p class="pl-2 mt-3 Nunito color-four">Twitter</p> -->
+                  <!-- <p class="mb-md-0 Nunito color-four">@LazoJoan</p> -->
+            </div>
+            <div class="col-4 col-md-2 my-1">
+                <a href="https://github.com/JoanLazo" target="_blank">
+                    <img class="img-footer" src="img/github-logo (1).png" alt="github">
+                  </a>
+                  <!-- <p class="pl-2 mt-3 Nunito color-four">GitHub</p> -->
+                  <!-- <p class="mb-md-0 Nunito color-four">/JoanLazo</p> -->
+            </div>
         
-        <div class="col-md-2 my-1">
-            <a href="https://api.whatsapp.com/send?phone=+51997971032">
-                <img class="img-footer" src="img/smartphone-call.png" alt="linkedin">
-              </a>
-              <p class="pl-2 mt-3 Nunito color-four">Celular</p>
-              <p class="mb-md-1 Nunito color-four"><a href="https://api.whatsapp.com/send?phone=+51997971032" style="text-decoration: none;" class="Nunito color-four">+51 997971032</a></p>
-        </div>
-        <div class="col-md-2 my-1">
-            <a>
-                <img class="img-footer" src="img/gmail-logo.png" alt="gmail">
-              </a>
-              <p class="pl-2 mt-3 Nunito color-four">Gmail</p>
-              <p class="mb-md-0 Nunito color-four">joan162581@gmail.com</p>
-        </div>
-        <div class="col-md-2 my-1">
-            <a href="https://www.linkedin.com/in/joan-lazo-morales/" target="_blank">
-                <img class="img-footer" src="img/linkedin-logo-button (1).png" alt="linkedin">
-              </a>
-              <p class="pl-2 mt-3 Nunito color-four">LinkedIn</p>
-              <p class="mb-md-0 Nunito color-four">/joan-lazo-morales/</p>
-        </div>
-        <div class="col-md-2 my-1">
-            <a  href="https://twitter.com/LazoJoan" target="_blank">
-                <img class="img-footer" src="img/twitter-logo-button (1).png" alt="twitter">
-              </a>
-              <p class="pl-2 mt-3 Nunito color-four">Twitter</p>
-              <p class="mb-md-0 Nunito color-four">@LazoJoan</p>
-        </div>
-        <div class="col-md-2 my-1">
-            <a href="https://github.com/JoanLazo" target="_blank">
-                <img class="img-footer" src="img/github-logo (1).png" alt="github">
-              </a>
-              <p class="pl-2 mt-3 Nunito color-four">GitHub</p>
-              <p class="mb-md-0 Nunito color-four">/JoanLazo</p>
-        </div>
+        <!-- Grid column -->
     
-    <!-- Grid column -->
-
-  </div>  
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="./img/pablita-nature.png" alt="Contacto">
+    </div>  
+  </div>
   <!-- Grid row-->
 </div>
 </section>
@@ -671,5 +714,5 @@
   <script type="text/javascript" src="js/mdb.js"></script>
   
 </body>
-
+<script src="./js/script.js"></script>
 </html>
